@@ -26,6 +26,128 @@ header img {
   height: 100px;
   width: auto;
 }
+  /* Carousel en header */
+  .carousel {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #e3c22d;
+    color: white;
+    padding: 0 20px;
+  }
+
+  .slides {
+    display: flex;
+    width: 100%;
+    animation: slide 12s infinite;
+  }
+
+  .slides img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  @keyframes slide {
+    0%, 33% { transform: translateX(0); }
+    34%, 66% { transform: translateX(-100%); }
+    67%, 100% { transform: translateX(-200%); }
+  }
+
+  /* Navigation */
+  nav {
+    background-color: white;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo img {
+    display: block;
+  }
+
+  .menu {
+    display: flex;
+    gap: 20px;
+  }
+
+  .menu a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .menu a:hover {
+    text-decoration: underline;
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+  }
+
+  /* MOBIEL */
+
+  @media (max-width: 768px) {
+    /* Verberg de carousel slides, toon statische afbeelding */
+    .slides {
+      display: none;
+    }
+
+    .carousel {
+      background: url('mobiele-header.jpg') center/cover no-repeat;
+      height: 150px;
+      padding-left: 20px;
+      padding-right: 20px;
+      align-items: flex-end;
+    }
+
+    /* Hamburger zichtbaar maken */
+    .hamburger {
+      display: flex;
+    }
+
+    /* Menu standaard verbergen */
+    .menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: white;
+      position: absolute;
+      top: 60px; /* net onder nav */
+      left: 0;
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+
+    .menu.show {
+      display: flex;
+    }
+
+    .menu a {
+      padding: 10px 20px;
+      border-top: 1px solid #ddd;
+      color: #333;
+    }
+
+    nav {
+      position: relative;
+    }
+  
 
 header div {
   display: flex;
