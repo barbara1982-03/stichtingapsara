@@ -5,210 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Stichting Apsara</title>
   <link rel="icon" type="image/png" href="favicon.png" />
-  <style>
-    :root {
-      --primary-color: #e3c22d;
-      --text-color: #333;
-      --background-color: #fdfdfd;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Nunito', sans-serif;
-      background: var(--background-color);
-      color: var(--text-color);
-      line-height: 1.6;
-    }
-
-    nav {
-      background-color: white;
-      padding: 10px 30px 5px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-
-
-    nav .logo {
-      color: #333;
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    nav .menu {
-      display: flex;
-      gap: 20px;
-    }
-
-    nav .menu a {
-      color: #333;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav .menu a:hover {
-      text-decoration: underline;
-    }
-
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-    }
-
-    .hamburger div {
-      width: 25px;
-      height: 3px;
-      background-color: white;
-      margin: 4px 0;
-    }
-
-    header {
-      background: var(--primary-color);
-      color: white;
-      padding: 1px;
-      display: flex;
-      align-items: center;
-      gap: 1px;
-    }
-.carousel {
-  position: relative;
-  overflow: hidden;
-  height: 200px;
-}
-.slides {
-  display: flex;
-  width: 100%;
-  animation: slide 12s infinite;
-}
-.slides img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  flex-shrink: 0;
-}
-@keyframes slide {
-  0%, 33% { transform: translateX(0); }
-  34%, 66% { transform: translateX(-100%); }
-  67%, 100% { transform: translateX(-200%); }
-}
-
-    main {
-      max-width: 1200px;
-      margin: 40px auto;
-      padding: 0 20px;
-      display: flex;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-
-    .content-left {
-      flex: 2 1 600px;
-      min-width: 280px;
-    }
-
-    .content-right {
-      flex: 1 1 350px;
-      min-width: 280px;
-      background: #fafafa;
-      border: 1px solid #ddd;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 8px rgb(0 0 0 / 0.05);
-      height: fit-content;
-    }
-
-    section {
-      margin-bottom: 40px;
-    }
-
-    h2, h3 {
-      color: var(--primary-color);
-      margin-top: 0;
-    }
-
-    h2 {
-      border-bottom: 2px solid var(--primary-color);
-      padding-bottom: 8px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    p {
-      margin: 0.5em 0 1em;
-    }
-
-    .bestuurslid {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      margin-bottom: 20px;
-    }
-
-    .bestuurslid img {
-      width: 60px;
-      height: 60px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 2px solid var(--primary-color);
-    }
-
-    footer {
-      background: #eee;
-      padding: 20px;
-      text-align: center;
-      font-size: 0.9em;
-      margin-top: 60px;
-    }
-
-    @media (max-width: 768px) {
-      .hamburger {
-        display: flex;
-      }
-      nav .menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #333;
-        margin-top: 10px;
-      }
-      nav .menu a {
-        padding: 10px;
-        border-top: 1px solid #444;
-      }
-      nav .menu.show {
-        display: flex;
-      }
-    }
-
-    @media (max-width: 900px) {
-      main {
-        flex-direction: column;
-        margin: 20px;
-      }
-      .content-left,
-      .content-right {
-        flex: none;
-        min-width: 100%;
-      }
-      .content-right {
-        margin-top: 40px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="stichting_apsara_styles.css">
 </head>
-
 <body>
 <nav>
-<div></div>
   <div style="display: flex; align-items: flex-end; width: 100%; justify-content: space-between; flex-wrap: wrap;">
     <div class="logo" style="display: flex; align-items: flex-end;">
-          </div>
- <div class="logo" style="display: flex; align-items: flex-end;">
       <img src="logo.png" alt="Stichting Apsara logo" style="height: 100px; width: auto;">
     </div>
     <div style="display: flex; align-items: flex-end; gap: 15px;">
@@ -225,34 +27,27 @@
   </div>
 </nav>
 
-<header class="carousel">
+<header>
+  <table style="width: 100%; text-align: center; padding-top: 5px;"">
+    <tr>
+      <td><img src="banner01.png" alt="Banner 1" style="height: 120px;"></td>
+      <td><img src="banner02.png" alt="Banner 2" style="height: 120px;"></td>
+      <td><img src="banner03.png" alt="Banner 3" style="height: 120px;"></td>
+    </tr>
+  </table>
+</header>
 
-   
-<div style="align-items: center;"> 
-&nbsp;&nbsp;&nbsp;
-
-    <img src="banner01.png" alt="" style="height: 120px; width: auto;" border-radius:2px;>&nbsp;&nbsp;&nbsp;
-<img src="banner02.png" alt="" style="height: 120px; width: auto;" border-radius:2px;>&nbsp;&nbsp;&nbsp;
-<img src="banner03.png" alt="" style="height: 120px; width: auto;" border-radius:2px;>
-
-    </div>
-    <div>
-         </div>
-  </header>
-
-  <main>
-    <div class="content-left">
-      
-<p>
-      <section>
-     <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap;">
-          <h3>Een greep uit onze projecten</h3>
+<main>
+  <div class="content-left">
+    <section>
+      <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap;">
+              </div>
+    </section>
+    <section>
+<h3>Een greep uit onze projecten</h3>
           <a href="doneer.html" target="_blank" style="background-color:#e3c22d; color:white; text-decoration:none; padding:10px 20px; border-radius:6px; font-weight:bold; margin-top:8px;">Doneer nu</a>
-        </div></section?
-<p>
-      <section>
-   <p>
- Aan de stoffige rand van het Cambodjaanse dorp Run Ta Ek begint iets moois te groeien. Hier wonen honderden gezinnen die noodgedwongen hun huizen moesten verlaten rondom het tempelgebied van Angkor. In dit nieuwe dorp ontbreekt het aan bijna alles: schoon drinkwater, sanitaire voorzieningen en een veilige plek voor kinderen om te spelen of te leren.
+         <p>
+Aan de stoffige rand van het Cambodjaanse dorp Run Ta Ek begint iets moois te groeien. Hier wonen honderden gezinnen die noodgedwongen hun huizen moesten verlaten rondom het tempelgebied van Angkor. In dit nieuwe dorp ontbreekt het aan bijna alles: schoon drinkwater, sanitaire voorzieningen en een veilige plek voor kinderen om te spelen of te leren.
       </p>
       <p>
         Dankzij de gulle steun van onze donateurs konden wij hier iets heel basaals én levensveranderends realiseren: een waterpomp. Geen kilometerslange tochten meer voor een emmer water, geen vervuild water uit open bronnen – maar schoon, veilig drinkwater, gewoon in het dorp.
@@ -263,42 +58,41 @@
       </p>
 <img src="waterpomp_rte.jpg" alt="Waterpomp in Run Ta Ek" style="height: 200px; width: auto;">
       </section>
+  </div>
+
+  <aside class="content-right">
+    <h3>Ons bestuur</h3>
+    <div class="bestuurslid">
+      <img src="eveline.png" alt="Eveline Groeneveld, voorzitter">
+      <div>Eveline Groeneveld, <i>voorzitter</i></div>
     </div>
-
-    <aside class="content-right">
-      <h3>Ons bestuur</h3>
-      <div class="bestuurslid">
-        <img src="eveline.png" alt="Eveline Groeneveld, voorzitter">
-        <div>Eveline Groeneveld, <i>voorzitter</i></div>
-      </div>
-      <div class="bestuurslid">
-        <img src="ton.png" alt="Ton Groeneveld, penningmeester">
-        <div>Ton Groeneveld, <i>penningmeester</i></div>
-      </div>
-      <div class="bestuurslid">
-        <img src="barbara.png" alt="Secretaris Barbara van Ooyen">
-        <div>Barbara van Ooyen, <i>secretaris</i></div>
-      </div>
-
-     <section>
+    <div class="bestuurslid">
+      <img src="ton.png" alt="Ton Groeneveld, penningmeester">
+      <div>Ton Groeneveld, <i>penningmeester</i></div>
+    </div>
+    <div class="bestuurslid">
+      <img src="barbara.png" alt="Secretaris Barbara van Ooyen">
+      <div>Barbara van Ooyen, <i>secretaris</i></div>
+    </div>
+    <section>
       <h3>Elke euro telt</h3>
       <p>
         Bij Stichting Apsara werken we met minimale overheadkosten. Zo zorgen we ervoor dat onze donaties écht verschil maken, daar waar het het hardst nodig is. We zijn trots dat Stichting Apsara officieel de ANBI-status heeft! Dit betekent dat jouw donatie niet alleen bijdraagt aan een mooiere wereld, maar ook fiscaal voordelig is!
-<p>
-<img src="anbi.png" alt="ANBI logo" style="height:70px;">
+      </p>
+      <img src="anbi.png" alt="ANBI logo" style="height:70px;">
     </section>
-    </aside>
-  </main>
-  <footer>
-    &copy; 2025-2030 Stichting Apsara<br>
-  
-  </footer>
+  </aside>
+</main>
 
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById('menu');
-      menu.classList.toggle('show');
-    }
-  </script>
+<footer>
+  &copy; 2025-2030 Stichting Apsara<br>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('show');
+  }
+</script>
 </body>
 </html>
