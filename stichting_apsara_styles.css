@@ -12,8 +12,6 @@ body {
   line-height: 1.6;
 }
 
-/* ... (alles uit jouw originele <style> sectie hier plaatsen) ... */
-
 .donatieknop {
   background-color: #e3c22d;
   color: white;
@@ -25,14 +23,72 @@ body {
   display: inline-block;
 }
 
-header {
-  background: #e3c22d;
-  color: #333;
-  padding: 2px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
+/* Reset standaard marges */
+body {
+  margin: 0;
+  font-family: sans-serif;
 }
+
+/* Header en footer over hele breedte */
+header, footer {
+  width: 100%;
+  background-color: #e3c22d; /* Geel of wat je wilt */
+  padding: 15px 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Navigatie */
+nav {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Hoofdinhoud */
+main {
+  display: flex;
+  flex-wrap: wrap;  /* Laat kolommen onder elkaar springen op mobiel */
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Linkerkolom */
+.content-left {
+  flex: 1 1 60%; /* groeit mee, standaard 60% */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Rechterkolom */
+.content-right {
+  flex: 1 1 35%; /* groeit mee, standaard 35% */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Repsonsieve weergave op kleine schermen */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .content-left,
+  .content-right {
+    flex: 1 1 100%;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #f0e000;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
 
 header img {
   height: 10px;
