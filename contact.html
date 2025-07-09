@@ -41,32 +41,19 @@
   <div class="content-left">
     <section>
       
-
-<h3>Heb je vragen of opmerkingen?</h3><br>
+<table border="0">
+  <tr>
+     <td style="padding: 5px;"><h3>Heb je vragen of opmerkingen?</h3><br>
 Mail ons dan via het onderstaande contactformulier<br>
 <p>
           <a href="doneer.html" target="_blank" style="background-color:#e3c22d; color:white; text-decoration:none; padding:10px 20px; border-radius:6px; font-weight:bold; margin-top:8px;">Doneer nu</a>
 
 
       <p>
-     <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $naam = htmlspecialchars($_POST['naam']);
-  $email = htmlspecialchars($_POST['e-mail']);
-  $onderwerp = htmlspecialchars($_POST['onderwerp']);
-  $bericht = htmlspecialchars($_POST['bericht']);
-
-  $to = "info@stichtingapsara.nl";
-  $subject = "Nieuw contactformulierbericht van $naam";
-  $body = "Naam: $naam\nE-mail: $email\nOnderwerp: $onderwerp\n\nBericht:\n$bericht";
-  $headers = "From: $email";
-
-  if (mail($to, $subject, $body, $headers)) {
-    echo "Bedankt voor je bericht! We zullen proberen je zo snel mogelijk een reactie te geven.";
-  } else {
-    echo "Helaas! Er ging iets mis met verzenden. Je kunt ook rechtstreeks mailen naar info@stichtingapsara.nl";
-  }
-}
+<div data-tf-live="01JZR0HRM118647J1DC5ANX7AS"></div><script src="//embed.typeform.com/next/embed.js"></script>
+</td>
+  </tr>
+</table>
 </section>
 
   </div>
