@@ -58,14 +58,14 @@ main {
 /* Linkerkolom */
 .content-left {
   flex: 1 1 60%; /* groeit mee, standaard 60% */
-  padding: 10px;
+  padding: 2px;
   box-sizing: border-box;
 }
 
 /* Rechterkolom */
 .content-right {
   flex: 1 1 35%; /* groeit mee, standaard 35% */
-  padding: 10px;
+  padding: 2px;
   box-sizing: border-box;
 }
 
