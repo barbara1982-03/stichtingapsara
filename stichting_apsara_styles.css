@@ -182,3 +182,8 @@ footer {
   text-align: center;
   font-size: 0.9em;
 }
+@media (max-width: 768px) {
+  .header-banner {
+    display: none;
+  }
+}
