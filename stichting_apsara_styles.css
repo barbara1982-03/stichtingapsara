@@ -32,19 +32,6 @@ header div {
   justify-content: center;
 }
 
-/* Carousel */
-.carousel {
-  position: relative;
-  overflow: hidden;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  background-color: #e3c22d;
-  color: white;
-  padding: 0 20px;
-}
-
 .slides {
   display: flex;
   width: 100%;
@@ -58,7 +45,7 @@ header div {
   flex-shrink: 0;
 }
 
-@keyframes slide {
+@keyframes slide {mo
   0%, 33% { transform: translateX(0); }
   34%, 66% { transform: translateX(-100%); }
   67%, 100% { transform: translateX(-200%); }
@@ -151,38 +138,6 @@ footer {
   text-align: center;
   font-size: 0.9em;
 }
-
-/* MOBIEL */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 3px;
-  }
-
-  header img {
-    height: 80px;
-  }
-
-
-  .hamburger {
-    display: flex;
-  }
-
-  .menu {
-    flex-direction: column;
-    width: 100%;
-    background: white;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    z-index: 10;
-  }
-
-  .menu.show {
-    display: flex;
-  }
-
   .menu a {
     padding: 10px 20px;
     border-top: 1px solid #ddd;
